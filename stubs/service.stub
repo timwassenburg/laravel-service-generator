@@ -1,0 +1,11 @@
+<?php
+
+namespace {{ namespace }};
+
+/**
+ * Class DummyClass.
+ */
+class DummyClass
+{
+
+}
