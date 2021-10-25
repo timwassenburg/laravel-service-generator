@@ -8,7 +8,7 @@ my workflow consistent.
 ## Installation
 Install the package with composer.
 ```bash
-composer require timwassenburg/laravel-service-generator --dev
+composer require timwassenburg/laravel-service-generator
 ```
 
 ## Usage
