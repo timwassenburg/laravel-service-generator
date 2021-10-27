@@ -9,6 +9,7 @@
   <p align="center">
     Quickly generate services for your projects!
   </p>
+<br><br>
 </div>
 
 ## Table of Contents
@@ -82,17 +83,19 @@ Add a ```--service``` or ```-S``` param to generate a service for the controller
 php artisan make:controller PostController --service
 ```
 
-## When to use the service pattern
+## The service pattern
+
+### When to use the service pattern
 A common question is: where do I put my business logic? You want to keep your models thin and your controller functions 
 skinny. There are multiple ways to archive this, extracting your business logic to the
 service layer is a common method. By encapsulating your business logic in a service class you
 are able to re-use the logic for example in your controllers, commands, jobs and middelware.
 
-## How to use services
+### How to use services
 Once you have made a service it is time to add your business logic. We will discus how to use a service via static methods,
 dependency injection and how to use it with interfaces and repositories.
 
-### Static methods
+#### Static methods
 a common way to use a service is to call it's methods statically. It is similar to helper functions. Let's say we have
 a ```PostService``` with a method to get a post based on a slug.
 
@@ -129,14 +132,14 @@ class PostController extends Controller
         
         return view('posts.show', compact('post'));
     }
-}
+}#
 ```
 
 The ```getPostBySlug``` method is in this example a very simple function but as you can see it keeps you controller skinny
 and and your business logic seperated. Keep in mind that static classes and methods are stateless. The class won't save 
 any data in itself.
 
-### Dependency Injection
+#### Dependency Injection
 Another popular method is to use services with dependency injection. With dependency injection you can write loosely 
 coupled code. When done right this will improve the flexibility and maintainability of your code.
 
