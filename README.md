@@ -11,7 +11,7 @@
   </p>
 </div>
 
-##Table of Contents
+## Table of Contents
   <ol>
     <li><a href="#features">Features</a></li>
     <li><a href="#installation">Installation</a></li>
