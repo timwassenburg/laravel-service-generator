@@ -1,6 +1,48 @@
-# Laravel Service Generator
+<br />
+<div align="center">
+  <a href="https://github.com/othneildrew/Best-README-Template">
+    <img src="img/wrench.png" alt="Logo" width=120>
+  </a>
 
-This simple package adds the ```php artisan make:service {name}``` command. The command 
+<h1 align="center">Laravel <strong>Service Generator</strong></h1>
+
+  <p align="center">
+    Quickly generate services for your projects!
+  </p>
+</div>
+
+##Table of Contents
+  <ol>
+    <li><a href="#features">Features</a></li>
+    <li><a href="#installation">Installation</a></li>
+    <li>
+      <a href="#usage">Usage</a>
+      <ul>
+        <li><a href="#generate-services">Generate services</a></li>
+        <li><a href="#generate-services-for-models">Generate services for models</a></li>
+        <li><a href="#generate-services-for-controllers">Generate services for controllers</a></li>
+      </ul>
+    </li>
+    <li>
+        <a href="#the-service-pattern">The service pattern</a>
+        <ul>
+            <li><a href="#when-to-use-the-service-pattern">When to use the service pattern</a></li>
+            <li>
+                <a href="#how-to-use-services">How to use services</a>
+                <ul>
+                    <li><a href="#static-methods">Static methods</a></li>
+                    <li><a href="#depency-injection">Dependency Injection</a></li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li><a href="#more-generator-packages">More generator packages</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#license">License</a></li>
+  </ol>
+
+## Features
+This package adds the ```php artisan make:service {name}``` command. The command 
 generates an empty service class in ```app\Services``` to get started. I made this mainly
 for own use because I like to be able to generate recurring files from the command line to keep
 my workflow consistent.
@@ -149,10 +191,24 @@ class PostController extends Controller
 }
 ```
 
+## More generator packages
+Looking for more ways to speed up your workflow? Make sure to check out these packages.
 
+- [Laravel Repository Generator](https://github.com/timwassenburg/laravel-repository-generator)
+- [Laravel Service Generator](https://github.com/timwassenburg/laravel-service-generator)
+- [Improved Resource Controllers](https://github.com/timwassenburg/laravel-improved-resource-controllers)
 
 ## Contributing
-If you want to contribute to this package feel tree to open a ticket or a pull request. 
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
+Don't forget to give the project a star! Thanks again!
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
 ## License
 
