@@ -1,6 +1,6 @@
 <br />
 <div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
+  <a href="https://github.com/timwassenburg/laravel-service-generator">
     <img src="img/wrench.png" alt="Logo" width=120>
   </a>
 
