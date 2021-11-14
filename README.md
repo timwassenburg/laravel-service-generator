@@ -197,9 +197,10 @@ class PostController extends Controller
 ## More generator packages
 Looking for more ways to speed up your workflow? Make sure to check out these packages.
 
+- [Laravel Action Generator](https://github.com/timwassenburg/laravel-action-generator)
+- [Laravel Pivot Table Generator](https://github.com/timwassenburg/laravel-pivot-table-generator)
 - [Laravel Repository Generator](https://github.com/timwassenburg/laravel-repository-generator)
 - [Laravel Service Generator](https://github.com/timwassenburg/laravel-service-generator)
-- [Laravel Action Generator](https://github.com/timwassenburg/laravel-action-generator)
 
 ## Contributing
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
