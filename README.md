@@ -13,6 +13,7 @@
 </div>
 
 ## Table of Contents
+
   <ol>
     <li><a href="#features">Features</a></li>
     <li><a href="#installation">Installation</a></li>
@@ -43,38 +44,48 @@
   </ol>
 
 ## Features
-This package adds the ```php artisan make:service {name}``` command. The command 
+
+This package adds the ```php artisan make:service {name}``` command. The command
 generates an empty service class in app\Services to get quickly started.
 
 ## Installation
+
 Install the package with composer.
+
 ```bash
 composer require timwassenburg/laravel-service-generator
 ```
 
 ## Usage
+
 After installation the ```php artisan make:service {name}``` will be available in the list
-of artisan commands. 
+of artisan commands.
 
 ### Generate Service
+
 To generate a new service use the following artisan command.
+
 ```bash
 php artisan make:service UserService
 ```
 
 ### Generate a service for a model
+
 Add a ```--service``` or ```-S``` param to generate a service for the model.
+
 ```bash
 php artisan make:model Post --service
 ```
 
-Use the ```-a``` or ```--all``` param to generate a service, migration, seeder, factory, policy, 
+Use the ```-a``` or ```--all``` param to generate a service, migration, seeder, factory, policy,
 and resource controller for the model.
+
 ```bash
 php artisan make:model Post --all
 ```
 
 ### Generate a service for a controller
+
 Add a ```--service``` or ```-S``` param to generate a service for the controller.
 
 ```bash
@@ -84,16 +95,20 @@ php artisan make:controller PostController --service
 ## The service pattern
 
 ### When to use the service pattern
-A common question is: where do I put my business logic? You want to keep your models thin and your controller functions 
+
+A common question is: where do I put my business logic? You want to keep your models thin and your controller functions
 skinny. There are multiple ways to archive this, extracting your business logic to the
 service layer is a common method. By encapsulating your business logic in a service class you
 are able to re-use the logic for example in your controllers, commands, jobs and middelware.
 
 ### How to use services
-Once you have made a service it is time to add your business logic. We will discus how to use a service via static methods,
+
+Once you have made a service it is time to add your business logic. We will discus how to use a service via static
+methods,
 dependency injection and how to use it with interfaces and repositories.
 
 #### Static methods
+
 a common way to use a service is to call it's methods statically. It is similar to helper functions. Let's say we have
 a ```PostService``` with a method to get a post based on a slug.
 
@@ -115,6 +130,7 @@ class PostService
 ```
 
 Next you can include the service class for example your controller and call the ```getPostBySlug``` method statically.
+
 ```php
 namespace App\Http\Controllers;
 
@@ -133,12 +149,14 @@ class PostController extends Controller
 }#
 ```
 
-The ```getPostBySlug``` method is in this example a very simple function but as you can see it keeps you controller skinny
-and and your business logic seperated. Keep in mind that static classes and methods are stateless. The class won't save 
+The ```getPostBySlug``` method is in this example a very simple function but as you can see it keeps you controller
+skinny
+and and your business logic seperated. Keep in mind that static classes and methods are stateless. The class won't save
 any data in itself.
 
 #### Dependency Injection
-Another popular method is to use services with dependency injection. With dependency injection you can write loosely 
+
+Another popular method is to use services with dependency injection. With dependency injection you can write loosely
 coupled code. When done right this will improve the flexibility and maintainability of your code.
 
 The ```PostService``` we used as example before will remain
@@ -161,9 +179,10 @@ class PostService
 ```
 
 Next we inject the service into the constructor of the class where we want to use it. Inside the constructor we
-assign the object to the ```$postService``` class property. Now the ```$postService``` property will be callable in 
+assign the object to the ```$postService``` class property. Now the ```$postService``` property will be callable in
 all functions within the class with ```$this->postService```. While typing your IDE will already typehint the functions
-in your PostService class, in this case only ```->getPostBySlug($slug)```. 
+in your PostService class, in this case only ```->getPostBySlug($slug)```.
+
 ```php
 namespace App\Http\Controllers;
 
@@ -193,6 +212,7 @@ class PostController extends Controller
 ```
 
 ## More generator packages
+
 Looking for more ways to speed up your workflow? Make sure to check out these packages.
 
 - [Laravel Action Generator](https://github.com/timwassenburg/laravel-action-generator)
@@ -201,9 +221,12 @@ Looking for more ways to speed up your workflow? Make sure to check out these pa
 - [Laravel Service Generator](https://github.com/timwassenburg/laravel-service-generator)
 
 ## Contributing
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any
+contributions you make are **greatly appreciated**.
+
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also
+simply open an issue with the tag "enhancement".
 Don't forget to give the project a star! Thanks again!
 
 1. Fork the Project

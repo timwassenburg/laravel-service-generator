@@ -1,7 +1,15 @@
 {
     "name": "timwassenburg/laravel-service-generator",
     "description": "Generate Laravel services",
-    "keywords": ["generator", "php", "cli", "laravel", "artisan", "services", "pattern"],
+    "keywords": [
+        "generator",
+        "php",
+        "cli",
+        "laravel",
+        "artisan",
+        "services",
+        "pattern"
+    ],
     "homepage": "https://github.com/timwassenburg/laravel-service-generator",
     "license": "MIT",
     "authors": [
