@@ -69,6 +69,13 @@ To generate a new service use the following artisan command.
 php artisan make:service UserService
 ```
 
+Optionally, you can add multiple method names (seperated by comma) with the ```--methods``` param.
+
+```bash
+php artisan make:service UserService --methods=register,login,logout
+```
+
+
 ### Generate a service for a model
 
 Add a ```--service``` or ```-S``` param to generate a service for the model.

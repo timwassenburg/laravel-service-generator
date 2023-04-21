@@ -7,5 +7,5 @@ namespace {{ namespace }};
  */
 class DummyClass
 {
-
+{{ methods }}
 }

@@ -2,6 +2,7 @@
 
 namespace TimWassenburg\ServiceGenerator\Console;
 
+use Illuminate\Contracts\Filesystem\FileNotFoundException;
 use Illuminate\Routing\Console\ControllerMakeCommand;
 use Illuminate\Support\Str;
 use Symfony\Component\Console\Input\InputOption;
@@ -10,6 +11,7 @@ class MakeController extends ControllerMakeCommand
 {
     /**
      * @return void
+     * @throws FileNotFoundException
      */
     public function handle()
     {

@@ -4,7 +4,7 @@ namespace TimWassenburg\ServiceGenerator;
 
 use Illuminate\Support\ServiceProvider;
 use TimWassenburg\ServiceGenerator\Console\MakeModel;
-use TimWassenburg\ServiceGenerator\Console\MakeService;
+use TimWassenburg\ServiceGenerator\Console\MakeServiceCommand;
 
 class ServiceGeneratorServiceProvider extends ServiceProvider
 {
@@ -13,7 +13,7 @@ class ServiceGeneratorServiceProvider extends ServiceProvider
     {
         if ($this->app->runningInConsole()) {
             $this->commands([
-                MakeService::class,
+                MakeServiceCommand::class,
                 MakeModel::class
             ]);
         }
