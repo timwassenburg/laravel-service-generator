@@ -1,23 +1,12 @@
-<br />
-<div align="center">
-  <a href="https://github.com/timwassenburg/laravel-service-generator">
-    <img src="img/wrench.png" alt="Logo" width=120>
-  </a>
-
-<h1 align="center">Laravel <strong>Service Generator</strong></h1>
-
-  <p align="center">
-    Quickly generate services for your projects!
-  </p>
-<br><br>
-</div>
+<img src="img/banner.png" alt="Logo">
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/timwassenburg/laravel-service-generator.svg?style=flat-square)](https://packagist.org/packages/timwassenburg/laravel-service-generator)
 [![Total Downloads](https://img.shields.io/packagist/dt/timwassenburg/laravel-service-generator.svg?style=flat-square)](https://packagist.org/packages/timwassenburg/laravel-service-generator)
 [![License](https://img.shields.io/packagist/l/timwassenburg/laravel-service-generator)](https://packagist.org/packages/timwassenburg/laravel-service-generator)
 
-## Table of Contents
+<hr>
 
+## Table of Contents
   <ol>
     <li><a href="#features">Features</a></li>
     <li><a href="#installation">Installation</a></li>
@@ -232,7 +221,7 @@ Looking for more ways to speed up your workflow? Make sure to check out these pa
 - [Laravel Service Generator](https://github.com/timwassenburg/laravel-service-generator)
 - [Laravel Trait Generator](https://github.com/timwassenburg/laravel-trait-generator)
 
-The packages mentioned above are part of [Laravel Generator Extender](https://github.com/timwassenburg/laravel-generator-extender).
+The packages mentioned above are part of [Laravel Artisan Extender](https://github.com/timwassenburg/laravel-artisan-extender).
 
 ## Contributing
 
