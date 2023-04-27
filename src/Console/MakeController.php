@@ -11,6 +11,7 @@ class MakeController extends ControllerMakeCommand
 {
     /**
      * @return void
+     *
      * @throws FileNotFoundException
      */
     public function handle()
@@ -33,13 +34,10 @@ class MakeController extends ControllerMakeCommand
         $name = Str::studly($nameInput);
 
         $this->call('make:service', [
-            'name' => "{$name}Service"
+            'name' => "{$name}Service",
         ]);
     }
 
-    /**
-     * @return array
-     */
     public function getOptions(): array
     {
         $options = parent::getOptions();

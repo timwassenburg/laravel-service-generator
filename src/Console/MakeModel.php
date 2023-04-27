@@ -34,13 +34,10 @@ class MakeModel extends ModelMakeCommand
         $name = Str::studly($this->getNameInput());
 
         $this->call('make:service', [
-            'name' => "{$name}Service"
+            'name' => "{$name}Service",
         ]);
     }
 
-    /**
-     * @return array
-     */
     public function getOptions(): array
     {
         $options = parent::getOptions();

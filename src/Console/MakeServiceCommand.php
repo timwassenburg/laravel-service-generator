@@ -34,7 +34,7 @@ class MakeServiceCommand extends GeneratorCommand
      */
     protected function getStub(): string
     {
-        return __DIR__ . '/../../stubs/service.stub';
+        return __DIR__.'/../../stubs/service.stub';
     }
 
     /**
@@ -42,23 +42,21 @@ class MakeServiceCommand extends GeneratorCommand
      */
     protected function getMethodStub(): string
     {
-        return __DIR__ . '/../../stubs/service-method.stub';
+        return __DIR__.'/../../stubs/service-method.stub';
     }
 
     /**
      * Get the default namespace for the class.
      *
-     * @param string $rootNamespace
+     * @param  string  $rootNamespace
      */
     protected function getDefaultNamespace($rootNamespace): string
     {
-        return $rootNamespace . '\Services';
+        return $rootNamespace.'\Services';
     }
 
     /**
      * Get the console command arguments.
-     *
-     * @return array
      */
     protected function getArguments(): array
     {
@@ -73,8 +71,8 @@ class MakeServiceCommand extends GeneratorCommand
      *
      * Remove the base controller import if we are already in the base namespace.
      *
-     * @param string $name
-     * @return string
+     * @param  string  $name
+     *
      * @throws FileNotFoundException
      */
     protected function buildClass($name): string
