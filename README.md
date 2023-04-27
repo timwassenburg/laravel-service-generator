@@ -46,7 +46,7 @@ generates an empty service class in app\Services to get quickly started.
 Install the package with composer.
 
 ```bash
-composer require timwassenburg/laravel-service-generator
+composer require timwassenburg/laravel-service-generator --dev
 ```
 
 ## Usage
