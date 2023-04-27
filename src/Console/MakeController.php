@@ -10,7 +10,7 @@ use Symfony\Component\Console\Input\InputOption;
 class MakeController extends ControllerMakeCommand
 {
     /**
-     * @return void
+     * @return bool|null
      *
      * @throws FileNotFoundException
      */
@@ -21,6 +21,8 @@ class MakeController extends ControllerMakeCommand
         if ($this->option('service')) {
             $this->createService();
         }
+
+        return false;
     }
 
     /**

@@ -1,6 +1,7 @@
 <img src="img/banner.png" alt="Logo">
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/timwassenburg/laravel-service-generator.svg?style=flat-square)](https://packagist.org/packages/timwassenburg/laravel-service-generator)
+[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/timwassenburg/laravel-service-generator/run-tests.yml?branch=master&label=tests&style=flat-square)](https://github.com/timwassenburg/laravel-service-generator/actions?query=workflow%3Arun-tests+branch%3Amaster)
 [![Total Downloads](https://img.shields.io/packagist/dt/timwassenburg/laravel-service-generator.svg?style=flat-square)](https://packagist.org/packages/timwassenburg/laravel-service-generator)
 [![License](https://img.shields.io/packagist/l/timwassenburg/laravel-service-generator)](https://packagist.org/packages/timwassenburg/laravel-service-generator)
 
@@ -31,6 +32,7 @@
             </li>
         </ul>
     </li>
+    <li><a href="#testing">Testing</a></li>
     <li><a href="#more-generator-packages">More generator packages</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
@@ -209,6 +211,14 @@ class PostController extends Controller
         return view('posts.show', compact('post'));
     }
 }
+```
+
+## Testing
+
+Run the tests with:
+
+```bash
+composer test
 ```
 
 ## More generator packages

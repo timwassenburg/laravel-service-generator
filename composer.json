@@ -29,6 +29,7 @@
     },
     "scripts": {
         "post-autoload-dump": "@php ./vendor/bin/testbench package:discover --ansi",
+        "analyse": "vendor/bin/phpstan analyse",
         "test": "vendor/bin/pest",
         "test-coverage": "vendor/bin/pest --coverage",
         "format": "vendor/bin/pint"
@@ -44,7 +45,8 @@
     "require-dev": {
         "pestphp/pest": "^2.5",
         "orchestra/testbench": "^8.5",
-        "laravel/pint": "^1.10"
+        "laravel/pint": "^1.10",
+        "nunomaduro/larastan": "^2.0"
     },
     "config": {
         "allow-plugins": {
