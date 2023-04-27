@@ -1,0 +1,5 @@
+<?php
+
+use TimWassenburg\ServiceGenerator\Tests\TestCase;
+
+uses(TestCase::class)->in(__DIR__);

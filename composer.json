@@ -22,12 +22,33 @@
             "TimWassenburg\\ServiceGenerator\\": "src/"
         }
     },
+    "autoload-dev": {
+        "psr-4": {
+            "TimWassenburg\\ServiceGenerator\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "post-autoload-dump": "@php ./vendor/bin/testbench package:discover --ansi",
+        "test": "vendor/bin/pest",
+        "test-coverage": "vendor/bin/pest --coverage",
+        "format": "vendor/bin/pint"
+    },
     "extra": {
         "laravel": {
             "providers": [
                 "TimWassenburg\\ServiceGenerator\\Http\\Providers\\CommandServiceProvider",
                 "TimWassenburg\\ServiceGenerator\\ServiceGeneratorServiceProvider"
             ]
+        }
+    },
+    "require-dev": {
+        "pestphp/pest": "^2.5",
+        "orchestra/testbench": "^8.5",
+        "laravel/pint": "^1.10"
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
         }
     }
 }
